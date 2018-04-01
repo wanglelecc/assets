@@ -8355,6 +8355,25 @@ button.close {
   border: none;
 }
 
+.label-radius {
+  border-radius: 10px;
+}
+
+.block-title span {
+  font-size: 30px;
+  font-weight: 100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff1616), to(#4425ff));
+  background: linear-gradient(to bottom, #ff1616, #4425ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.block-title-english {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #474747;
+}
+
 .page-navbar {
   margin-bottom: 0px;
   background-color: #0c0c0c;
@@ -8417,13 +8436,213 @@ button.close {
   border-radius: 10px;
 }
 
-.page-course-background .page-course .thumbnail .caption p span.label {
-  background-color: #FFF;
-  color: #000000;
-  border: 1px solid #ff1616;
-}
-
 .page-course-background .page-course .thumbnail .caption p span.text-right {
   float: right;
+}
+
+.page-course-background .page-course .thumbnail .caption p.tags {
+  line-height: 28px;
+}
+
+.page-course-background .page-course .thumbnail .caption p.tags span.label {
+  position: relative;
+  border: 1px solid transparent;
+  background-color: #FFF;
+  color: #000000;
+  padding: .2em .6em;
+  border-radius: 10px;
+  z-index: 1;
+  margin-right: 3px;
+}
+
+.page-course-background .page-course .thumbnail .caption p.tags span.label:last-child {
+  margin-right: 0px;
+}
+
+.page-course-background .page-course .thumbnail .caption p.tags span.label::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff1616), to(#4425ff));
+  background: linear-gradient(to right, #ff1616, #4425ff);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* 明星教练 */
+
+.page-coach .col-xs-1,
+.page-coach .col-sm-1,
+.page-coach .col-md-1,
+.page-coach .col-lg-1,
+.page-coach .col-xs-2,
+.page-coach .col-sm-2,
+.page-coach .col-md-2,
+.page-coach .col-lg-2,
+.page-coach .col-xs-3,
+.page-coach .col-sm-3,
+.page-coach .col-md-3,
+.page-coach .col-lg-3,
+.page-coach .col-xs-4,
+.page-coach .col-sm-4,
+.page-coach .col-md-4,
+.page-coach .col-lg-4,
+.page-coach .col-xs-5,
+.page-coach .col-sm-5,
+.page-coach .col-md-5,
+.page-coach .col-lg-5,
+.page-coach .col-xs-6,
+.page-coach .col-sm-6,
+.page-coach .col-md-6,
+.page-coach .col-lg-6,
+.page-coach .col-xs-7,
+.page-coach .col-sm-7,
+.page-coach .col-md-7,
+.page-coach .col-lg-7,
+.page-coach .col-xs-8,
+.page-coach .col-sm-8,
+.page-coach .col-md-8,
+.page-coach .col-lg-8,
+.page-coach .col-xs-9,
+.page-coach .col-sm-9,
+.page-coach .col-md-9,
+.page-coach .col-lg-9,
+.page-coach .col-xs-10,
+.page-coach .col-sm-10,
+.page-coach .col-md-10,
+.page-coach .col-lg-10,
+.page-coach .col-xs-11,
+.page-coach .col-sm-11,
+.page-coach .col-md-11,
+.page-coach .col-lg-11,
+.page-coach .col-xs-12,
+.page-coach .col-sm-12,
+.page-coach .col-md-12,
+.page-coach .col-lg-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.page-coach .thumbnail {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.page-coach .thumbnail img.thumb {
+  width: 100%;
+  height: 380px;
+}
+
+.page-coach .thumbnail .caption-title {
+  display: none;
+  position: absolute;
+  background-color: #0c0c0c;
+  opacity: 0.8;
+  color: #FFF;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-coach .thumbnail .caption-title h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.page-coach .thumbnail .caption-hover {
+  padding-top: 30px;
+  position: absolute;
+  background-color: #0c0c0c;
+  opacity: 0.8;
+  color: #FFF;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-coach .thumbnail .caption-hover p {
+  padding: 0 20px;
+}
+
+.page-coach .thumbnail .caption-hover h3,
+.page-coach .thumbnail .caption-hover p:nth-of-type(1),
+.page-coach .thumbnail .caption-hover p:nth-of-type(2) {
+  text-align: center;
+}
+
+.page-coach .thumbnail .caption-hover h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.page-coach .thumbnail .caption-hover p:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+/* 学员风采 */
+
+.page-students .media {
+  margin-bottom: 10px;
+}
+
+.page-students .media .media-left img {
+  width: 300px;
+  height: 180px;
+}
+
+.page-students .media .media-body {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.page-students .media .media-body h4,
+.page-students .media .media-body p {
+  font-size: 14px;
+}
+
+footer .footer-top {
+  background-color: #2e3132;
+  color: #FFF;
+  padding: 25px 0;
+}
+
+footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .footer-top p {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+footer .footer-bottom {
+  background-color: #272929;
+  padding: 20px 0;
+}
+
+footer .footer-bottom a {
+  color: #FFF;
+}
+
+footer .footer-bottom p {
+  margin-bottom: 3px;
+  color: #474747;
+}
+
+footer .footer-bottom p a {
+  color: #474747;
 }
 
