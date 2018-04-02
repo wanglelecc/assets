@@ -23,12 +23,26 @@
   border-radius: 10px;
 }
 
-.block-title span{
+.block-title{
+  display: inline-block;
   font-size:30px;
   font-weight:100;
-  background: linear-gradient(to bottom, #ff1616, #4425ff);
-  -webkit-background-clip: text;
-  color: transparent;
+  //background: linear-gradient(to bottom, #ff1616, #4425ff);
+  //-webkit-background-clip: text;
+  //color: transparent;
+  //-webkit-text-fill-color: transparent;
+  position: relative;
+  color: #ff1616;
+}
+
+.block-title[data-text]::after{
+  display: block;
+  content: attr(data-text);
+  color: #4425ff;
+  position: absolute;
+  top:0;
+  z-index: 2;
+  -webkit-mask:linear-gradient(to top, red, transparent );
 }
 
 .block-title-english{
