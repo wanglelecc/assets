@@ -8356,15 +8356,23 @@ button.close {
 }
 
 .label-radius {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .block-title {
   display: inline-block;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 100;
   position: relative;
   color: #ff1616;
+}
+
+.block-title-img {
+  margin-top: 1.5rem;
+}
+
+.block-title-img img {
+  height: 2.5rem;
 }
 
 .block-title[data-text]::after {
@@ -8380,54 +8388,50 @@ button.close {
 
 .block-title-english {
   font-family: PingFangSC-Regular;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #474747;
 }
 
 .page-navbar {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   background-color: #0c0c0c;
 }
 
 .page-navbar ul.navbar-nav li {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .page-navbar ul.navbar-nav li.active span {
-  padding-bottom: 8px;
-  border-bottom: 3px solid #FFF;
+  padding-bottom: 0.8rem;
+  border-bottom: 0.3rem solid #FFF;
 }
 
 .page-jumbotron {
-  height: 500px;
+  height: 60rem;
+  background-image: url("/images/m-home-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF;
 }
 
-.page-introduction {
-  width: 945px;
-  position: absolute;
-  top: 452px;
-  left: 50%;
-  margin-left: -472px;
+.page-jumbotron p.play {
+  margin-top: 12rem;
 }
 
-.page-introduction .panel {
-  border-radius: 0;
+.page-jumbotron p.play img {
+  margin-bottom: 1rem;
+  width: 7.5rem;
 }
 
-.page-introduction .panel .panel-heading {
-  height: 100px;
+.page-jumbotron h2 {
+  margin-top: 5em;
+  font-size: 2rem;
 }
 
-.page-introduction .panel .panel-heading h3 {
-  margin-top: 25px;
-}
-
-.page-introduction .panel .panel-body p {
-  padding: 30px 20px;
-}
-
-.page-course-background .page-course {
-  margin-top: 220px;
+.page-jumbotron p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
 .page-course-background .page-course .thumbnail {
@@ -8443,7 +8447,7 @@ button.close {
 .page-course-background .page-course .thumbnail .caption h3 span {
   float: right;
   font-size: 55%;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .page-course-background .page-course .thumbnail .caption p span.text-right {
@@ -8451,7 +8455,7 @@ button.close {
 }
 
 .page-course-background .page-course .thumbnail .caption p.tags {
-  line-height: 28px;
+  line-height: 2.8rem;
 }
 
 .page-course-background .page-course .thumbnail .caption p.tags span.label {
@@ -8479,7 +8483,7 @@ button.close {
   background: -webkit-gradient(linear, left top, right top, from(#ff1616), to(#4425ff));
   background: linear-gradient(to right, #ff1616, #4425ff);
   z-index: -1;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 /* 明星教练 */
@@ -8532,13 +8536,13 @@ button.close {
 .page-coach .col-sm-12,
 .page-coach .col-md-12,
 .page-coach .col-lg-12 {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .page-coach .thumbnail {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   padding: 0;
   border-radius: 0;
   border: none;
@@ -8546,7 +8550,7 @@ button.close {
 
 .page-coach .thumbnail img.thumb {
   width: 100%;
-  height: 380px;
+  height: 30rem;
 }
 
 .page-coach .thumbnail .caption-title {
@@ -8555,23 +8559,23 @@ button.close {
   background-color: #0c0c0c;
   opacity: 0.8;
   color: #FFF;
-  height: 40px;
+  height: 4rem;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
 .page-coach .thumbnail .caption-title h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 4rem;
   font-weight: bold;
 }
 
 .page-coach .thumbnail .caption-hover {
-  padding-top: 30px;
+  padding-top: 3rem;
   position: absolute;
   background-color: #0c0c0c;
   opacity: 0.8;
@@ -8583,7 +8587,7 @@ button.close {
 }
 
 .page-coach .thumbnail .caption-hover p {
-  padding: 0 20px;
+  padding: 0 2rem;
 }
 
 .page-coach .thumbnail .caption-hover h3,
@@ -8593,7 +8597,7 @@ button.close {
 }
 
 .page-coach .thumbnail .caption-hover h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -8604,43 +8608,61 @@ button.close {
 /* 学员风采 */
 
 .page-students .media {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.page-students .media .media-left {
+  position: relative;
+}
+
+.page-students .media .media-left span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-left: -2.5rem;
+  margin-top: -2.5rem;
+  background-image: url("/images/play.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-students .media .media-left img {
-  width: 300px;
-  height: 180px;
+  width: 18rem;
+  height: 12rem;
 }
 
 .page-students .media .media-body {
-  padding-top: 20px;
-  font-size: 14px;
+  padding-top: 2rem;
+  font-size: 1.4rem;
 }
 
 .page-students .media .media-body h4,
 .page-students .media .media-body p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 footer .footer-top {
   background-color: #2e3132;
   color: #FFF;
-  padding: 25px 0;
+  padding: 2.5rem 0;
 }
 
 footer .footer-top h4 {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 footer .footer-top p {
-  font-size: 10px;
-  margin-bottom: 3px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 footer .footer-bottom {
   background-color: #272929;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 footer .footer-bottom a {
@@ -8648,11 +8670,71 @@ footer .footer-bottom a {
 }
 
 footer .footer-bottom p {
-  margin-bottom: 3px;
+  margin-bottom: 0.5rem;
   color: #474747;
 }
 
 footer .footer-bottom p a {
   color: #474747;
+}
+
+@media (min-width: 992px) {
+  .page-students .media .media-left img {
+    width: 28rem;
+    height: 18rem;
+  }
+
+  .page-jumbotron {
+    background-image: url("/images/home-bg.png");
+    height: 800px;
+  }
+
+  .page-jumbotron p.play {
+    margin-top: 15rem;
+  }
+
+  .page-jumbotron p.play img {
+    margin-bottom: 1rem;
+  }
+
+  .page-jumbotron h2 {
+    margin-top: 5em;
+    font-size: 3rem;
+  }
+
+  .page-jumbotron p {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .page-introduction {
+    width: 94.5rem;
+    position: absolute;
+    top: 732px;
+    left: 50%;
+    margin-left: -47rem;
+  }
+
+  .page-introduction .panel {
+    border-radius: 0;
+    background: transparent !important;
+  }
+
+  .page-introduction .panel .panel-heading {
+    height: 10rem;
+    opacity: 0.8;
+  }
+
+  .page-introduction .panel .panel-heading h3 {
+    margin-top: 2.5rem;
+  }
+
+  .page-introduction .panel .panel-body p {
+    padding: 3rem 2rem;
+  }
+
+  .page-course-background .page-course {
+    margin-top: 22rem;
+  }
 }
 
