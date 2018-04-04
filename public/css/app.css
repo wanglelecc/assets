@@ -8359,7 +8359,7 @@ button.close {
   border-radius: 1rem;
 }
 
-.block-title {
+footer-top .block-title {
   display: inline-block;
   font-size: 3rem;
   font-weight: 100;
@@ -8645,6 +8645,7 @@ button.close {
 }
 
 footer .footer-top {
+  display: none;
   background-color: #2e3132;
   color: #FFF;
   padding: 2.5rem 0;
@@ -8665,20 +8666,37 @@ footer .footer-bottom {
   padding: 2rem 0;
 }
 
+footer .footer-bottom ul {
+  display: none;
+}
+
+footer .footer-bottom p:nth-of-type(2) {
+  display: none;
+}
+
 footer .footer-bottom a {
   color: #FFF;
 }
 
 footer .footer-bottom p {
   margin-bottom: 0.5rem;
-  color: #474747;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
 }
 
 footer .footer-bottom p a {
-  color: #474747;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @media (min-width: 992px) {
+  footer .footer-top {
+    display: block;
+  }
+
+  footer .footer-bottom p:nth-of-type(2) {
+    display: block;
+  }
+
   .page-students .media .media-left img {
     width: 28rem;
     height: 18rem;

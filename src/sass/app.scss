@@ -21,7 +21,7 @@
 .label-radius{
   border-radius: 1rem;
 }
-
+footer-top
 .block-title{
   display: inline-block;
   font-size:3rem;
@@ -286,6 +286,9 @@
 
 footer{
   .footer-top{
+
+    display: none;
+
     background-color: #2e3132;
     color:#FFF;
     padding:2.5rem 0;
@@ -304,24 +307,43 @@ footer{
     background-color: #272929;
     padding:2rem 0;
 
+    ul{
+      display: none;
+    }
+
+    p:nth-of-type(2){
+      display: none;
+    }
+
     a{
       color:#FFF;
     }
 
     p{
       margin-bottom: 0.5rem;
-      color:#474747;
+      color:rgba(255,255,255,0.40);
       a{
-        color:#474747;
+        color:rgba(255,255,255,0.40);
       }
+      font-size:1rem;
     }
   }
 }
 
-
-
-
 @media (min-width: $screen-md-min) {
+
+  footer{
+    .footer-top{
+      display: block;
+    }
+
+    .footer-bottom{
+      p:nth-of-type(2){
+        display: block;
+      }
+    }
+  }
+
   .page-students .media .media-left{
     img{
       width:28rem;
