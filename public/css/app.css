@@ -8402,6 +8402,10 @@ button.close {
   padding-right: 0.5rem;
 }
 
+.navbar {
+  border-radius: 0;
+}
+
 .thumbnail {
   margin-bottom: 1rem;
 }
@@ -8432,7 +8436,7 @@ footer-top .block-title {
 }
 
 .block-title-img img {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .block-title[data-text]::after {
@@ -8697,35 +8701,64 @@ footer .footer-bottom p a {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* 学员风采 */
-
-.students .nav li {
+.coach .pager li,
+.students .pager li {
   background-color: #f2f4f4;
   margin-left: 0;
 }
 
-.students .nav li:first-of-type {
+.coach .pager li:first-of-type,
+.students .pager li:first-of-type {
   border-radius: 15px 0 0 15px;
 }
 
-.students .nav li:last-of-type {
+.coach .pager li:last-of-type,
+.students .pager li:last-of-type {
   border-radius: 0 15px 15px 0;
 }
 
-.students .nav li a {
+.coach .pager li a,
+.students .pager li a {
   color: #000000;
   padding: 5px 15px;
+  margin-bottom: 5px;
 }
 
-.students .nav li a:hover {
-  background-color: transparent;
-}
-
-.students .nav-pills li.active a {
+.coach .pager li.active a,
+.students .pager li.active a {
   color: #FFF;
   border-radius: 15px;
   background-color: #c61a5d;
 }
+
+/* 课程安排 */
+
+.course-banner img {
+  width: 100%;
+}
+
+.course-banner img.course-banner-xs-img {
+  display: block;
+}
+
+.course-banner img.course-banner-md-img {
+  display: none;
+}
+
+.course .list-group a.active {
+  background-color: #c61a5d;
+  border-color: #c61a5d;
+}
+
+/* 教练管理 */
+
+.coach-banner {
+  height: 10rem;
+  background: url("/images/team-banner.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* 学员风采 */
 
 .students .thumbnail {
   padding: 0;
@@ -8766,6 +8799,23 @@ footer .footer-bottom p a {
 /* 适应PC */
 
 @media (min-width: 992px) {
+  .course .course-content {
+    min-height: 60rem;
+  }
+
+  .course-banner img.course-banner-xs-img {
+    display: none;
+  }
+
+  .course-banner img.course-banner-md-img {
+    display: block;
+  }
+
+  .coach-banner {
+    height: 40rem;
+    background-size: cover;
+  }
+
   footer .footer-top {
     display: block;
   }

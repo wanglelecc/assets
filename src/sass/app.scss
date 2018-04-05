@@ -12,6 +12,10 @@
   padding-right:0.5rem;
 }
 
+.navbar{
+  border-radius:0;
+}
+
 .thumbnail{
   margin-bottom: 1rem;
 }
@@ -51,7 +55,7 @@ footer-top
   margin-top: 1.5rem;
 
   img{
-    height:2.5rem;
+    height:2rem;
   }
 
 }
@@ -339,35 +343,69 @@ footer{
   }
 }
 
-/* 学员风采 */
-.students{
-  .nav li{
+.coach, .students{
+  .pager li{
     background-color: #f2f4f4;
     margin-left: 0;
   }
 
-  .nav li:first-of-type{
+  .pager li:first-of-type{
     border-radius:15px 0 0 15px;
   }
 
-  .nav li:last-of-type{
+  .pager li:last-of-type{
     border-radius:0 15px 15px 0;
   }
 
-  .nav li a{
+  .pager li a{
     color:#000000;
     padding:5px 15px;
+    margin-bottom: 5px;
   }
 
-  .nav li a:hover{
-    background-color:transparent;
+  .pager li a:hover{
+    //background-color:transparent;
   }
 
-  .nav-pills li.active a{
+  .pager li.active a{
     color:#FFF;
     border-radius: 15px;
     background-color: #c61a5d;
   }
+}
+
+/* 课程安排 */
+.course-banner{
+  img{
+    width: 100%;
+  }
+
+  img.course-banner-xs-img{
+    display: block;
+  }
+  img.course-banner-md-img{
+    display: none;
+  }
+
+}
+
+.course{
+  .list-group a.active{
+    background-color:#c61a5d;
+    border-color:#c61a5d;
+  }
+}
+
+/* 教练管理 */
+.coach-banner{
+  height: 10rem;
+  background: url("/images/team-banner.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* 学员风采 */
+.students{
+
 
   .thumbnail{
     padding:0;
@@ -410,77 +448,97 @@ footer{
 /* 适应PC */
 @media (min-width: $screen-md-min) {
 
-  footer{
-    .footer-top{
+  .course .course-content{
+    min-height: 60rem;
+  }
+  
+
+  .course-banner{
+    img.course-banner-xs-img{
+      display: none;
+    }
+    img.course-banner-md-img{
       display: block;
     }
 
-    .footer-bottom{
-      p:nth-of-type(2){
+  }
+
+  .coach-banner{
+    height: 40rem;
+    background-size:cover;
+  }
+
+  footer {
+    .footer-top {
+      display: block;
+    }
+
+    .footer-bottom {
+      p:nth-of-type(2) {
         display: block;
       }
     }
   }
 
-  .page-students .media .media-left{
-    img{
-      width:28rem;
-      height:18rem;
+  .page-students .media .media-left {
+    img {
+      width: 28rem;
+      height: 18rem;
     }
   }
 
-  .page-jumbotron{
-    background-image:url("/images/home-bg.png");
+  .page-jumbotron {
+    background-image: url("/images/home-bg.png");
     height: 800px;
 
-    p.play{
+    p.play {
       margin-top: 15rem;
-      img{
+      img {
         margin-bottom: 1rem;
       }
     }
 
-    h2{
+    h2 {
       margin-top: 5em;
-      font-size:3rem;
+      font-size: 3rem;
     }
-    p{
-      margin-top:1rem;
+    p {
+      margin-top: 1rem;
       font-size: 2rem;
     }
   }
 
-  .page-introduction{
+  .page-introduction {
     width: 94.5rem;
     position: absolute;
-    top:732px;
-    left:50%;
-    margin-left:-47rem;
+    top: 732px;
+    left: 50%;
+    margin-left: -47rem;
 
-    .panel{
+    .panel {
       border-radius: 0;
       background: transparent !important;
 
-      .panel-heading{
-        height:10rem;
+      .panel-heading {
+        height: 10rem;
         //background-color: #0c0c0c;
-        opacity:0.8;
+        opacity: 0.8;
 
-        h3{
+        h3 {
           margin-top: 2.5rem;
         }
       }
 
-      .panel-body{
-        p{
-          padding:3rem 2rem;
+      .panel-body {
+        p {
+          padding: 3rem 2rem;
         }
       }
     }
 
   }
 
-  .page-course-background .page-course{
-    margin-top:22rem;
+  .page-course-background .page-course {
+    margin-top: 22rem;
   }
 }
