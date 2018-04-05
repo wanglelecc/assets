@@ -7,6 +7,10 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+a:hover{
+  text-decoration: none;
+}
+
 .label-bg-gradient{
   //background-image: -webkit-gradient(linear, left top, right top, from(#05AABD), to(#00AB60));
   // to left：设置渐变为从右到左。相当于: 270deg
@@ -115,6 +119,7 @@ footer-top
       img {
         width:100%;
         margin:0;
+        height:30rem;
       }
 
       .caption{
