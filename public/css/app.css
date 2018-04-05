@@ -8350,6 +8350,62 @@ button.close {
   }
 }
 
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.thumbnail {
+  margin-bottom: 1rem;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -8492,58 +8548,6 @@ footer-top .block-title {
 }
 
 /* 明星教练 */
-
-.page-coach .col-xs-1,
-.page-coach .col-sm-1,
-.page-coach .col-md-1,
-.page-coach .col-lg-1,
-.page-coach .col-xs-2,
-.page-coach .col-sm-2,
-.page-coach .col-md-2,
-.page-coach .col-lg-2,
-.page-coach .col-xs-3,
-.page-coach .col-sm-3,
-.page-coach .col-md-3,
-.page-coach .col-lg-3,
-.page-coach .col-xs-4,
-.page-coach .col-sm-4,
-.page-coach .col-md-4,
-.page-coach .col-lg-4,
-.page-coach .col-xs-5,
-.page-coach .col-sm-5,
-.page-coach .col-md-5,
-.page-coach .col-lg-5,
-.page-coach .col-xs-6,
-.page-coach .col-sm-6,
-.page-coach .col-md-6,
-.page-coach .col-lg-6,
-.page-coach .col-xs-7,
-.page-coach .col-sm-7,
-.page-coach .col-md-7,
-.page-coach .col-lg-7,
-.page-coach .col-xs-8,
-.page-coach .col-sm-8,
-.page-coach .col-md-8,
-.page-coach .col-lg-8,
-.page-coach .col-xs-9,
-.page-coach .col-sm-9,
-.page-coach .col-md-9,
-.page-coach .col-lg-9,
-.page-coach .col-xs-10,
-.page-coach .col-sm-10,
-.page-coach .col-md-10,
-.page-coach .col-lg-10,
-.page-coach .col-xs-11,
-.page-coach .col-sm-11,
-.page-coach .col-md-11,
-.page-coach .col-lg-11,
-.page-coach .col-xs-12,
-.page-coach .col-sm-12,
-.page-coach .col-md-12,
-.page-coach .col-lg-12 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 
 .page-coach .thumbnail {
   position: relative;
@@ -8692,6 +8696,74 @@ footer .footer-bottom p {
 footer .footer-bottom p a {
   color: rgba(255, 255, 255, 0.4);
 }
+
+/* 学员风采 */
+
+.students .nav li {
+  background-color: #f2f4f4;
+  margin-left: 0;
+}
+
+.students .nav li:first-of-type {
+  border-radius: 15px 0 0 15px;
+}
+
+.students .nav li:last-of-type {
+  border-radius: 0 15px 15px 0;
+}
+
+.students .nav li a {
+  color: #000000;
+  padding: 5px 15px;
+}
+
+.students .nav li a:hover {
+  background-color: transparent;
+}
+
+.students .nav-pills li.active a {
+  color: #FFF;
+  border-radius: 15px;
+  background-color: #c61a5d;
+}
+
+.students .thumbnail {
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.students .thumbnail img {
+  width: 100%;
+  height: 15rem;
+}
+
+.students .thumbnail .caption {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  color: #FFF;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.students .thumbnail .caption h3 {
+  font-size: 1.8rem;
+}
+
+.students .thumbnail .caption span.play {
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url("/images/play2.png") no-repeat left top;
+  background-size: cover;
+}
+
+/* 适应PC */
 
 @media (min-width: 992px) {
   footer .footer-top {

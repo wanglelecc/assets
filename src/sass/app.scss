@@ -7,6 +7,15 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.thumbnail{
+  margin-bottom: 1rem;
+}
+
 a:hover{
   text-decoration: none;
 }
@@ -177,11 +186,6 @@ footer-top
 /* 明星教练 */
 .page-coach{
 
-  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
-    padding-left:0.5rem;
-    padding-right:0.5rem;
-  }
-
   .thumbnail{
     position: relative;
     margin-bottom:1rem;
@@ -335,6 +339,75 @@ footer{
   }
 }
 
+/* 学员风采 */
+.students{
+  .nav li{
+    background-color: #f2f4f4;
+    margin-left: 0;
+  }
+
+  .nav li:first-of-type{
+    border-radius:15px 0 0 15px;
+  }
+
+  .nav li:last-of-type{
+    border-radius:0 15px 15px 0;
+  }
+
+  .nav li a{
+    color:#000000;
+    padding:5px 15px;
+  }
+
+  .nav li a:hover{
+    background-color:transparent;
+  }
+
+  .nav-pills li.active a{
+    color:#FFF;
+    border-radius: 15px;
+    background-color: #c61a5d;
+  }
+
+  .thumbnail{
+    padding:0;
+    border:none;
+    position: relative;
+
+    img{
+      width:100%;
+      height:15rem;
+    }
+
+    .caption{
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom: 0;
+      background-color: #000000;
+      opacity: 0.5;
+      color:#FFF;
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      h3{
+        font-size:1.8rem;
+      }
+
+      span.play{
+        display: block;
+        width: 3.6rem;
+        height: 3.6rem;
+        background: url("/images/play2.png") no-repeat left top;
+        background-size: cover;
+      }
+    }
+  }
+
+}
+
+/* 适应PC */
 @media (min-width: $screen-md-min) {
 
   footer{
