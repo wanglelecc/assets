@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div id="app">
+<div id="app"  class="about">
 
     <nav class="navbar navbar-inverse page-navbar">
         <div class="container">
@@ -44,26 +44,26 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <div class="course-banner">
+            <div class="about-banner">
+                <div class="about-banner-text">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-4 col-md-offset-8">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">立刻注册领取<span><img src="/images/text-mianfeitiyanke-.png" /></span></div>
-                                    <div class="panel-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入姓名">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入手机号">
-                                            </div>
-                                            <button type="submit" class="btn btn-default btn-block">立即申请</button>
-                                        </form>
+                        <div class="row" >
+                              <div class="col-xs-12 col-md-4 col-md-offset-8">
+                                    <div class="panel panel-default about-banner-form">
+                                        <div class="panel-heading">立刻注册领取<span><img src="/images/text-mianfeitiyanke-.png" /></span></div>
+                                        <div class="panel-body">
+                                            <form method="post" action="">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入姓名">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="请输入手机号">
+                                                </div>
+                                                <button type="submit" class="btn btn-default btn-block button-bg-gradient">立即申请</button>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -74,14 +74,14 @@
         <!-- 关于我们内容 -->
         <div class="row">
             <div class="col-xs-12 col-md-6 col-md-offset-3">
-                <div class="row text-center">
+                <div class="row text-center about-text">
                     <br />
                     <h2 class="block-title-img _block-title" data-text="关于我们"><img src="/images/about-us.png" alt="关于我们" /></h2>
                     <p class="block-title-english">About us</p>
                     <br />
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <p>虎跃堂散打泰拳馆隶属于北京瑞虎腾飞体育文化有限公司（北京总部），在2009年10月河南省首届顶级中泰拳王争霸赛中击败两次获得金牌腰带的泰国泰王。俱乐部拥有专业的训练场地，科学的训练方法，丰富的教学精要和雄厚的师资力量。以北京体育大学散打队专业训练方法为蓝本，辅以个性化指导。加强学员的身体素质、提升现实中御敌实战对抗的能力。初级学员以培养自信、强身健体为主。中高级优秀运动员可输送到各大散打专业队或考取各大体育院校。</p>
+                            <p class="text-left">虎跃堂散打泰拳馆隶属于北京瑞虎腾飞体育文化有限公司（北京总部），在2009年10月河南省首届顶级中泰拳王争霸赛中击败两次获得金牌腰带的泰国泰王。俱乐部拥有专业的训练场地，科学的训练方法，丰富的教学精要和雄厚的师资力量。以北京体育大学散打队专业训练方法为蓝本，辅以个性化指导。加强学员的身体素质、提升现实中御敌实战对抗的能力。初级学员以培养自信、强身健体为主。中高级优秀运动员可输送到各大散打专业队或考取各大体育院校。</p>
                         </div>
                     </div>
                 </div>
@@ -93,9 +93,7 @@
         <!-- 门店位置 -->
         <div class="row">
             <div class="col-xs-12 col-md-12">
-                <div class="about-map">
-
-                </div>
+                <div class="about-map" id="allmap"></div>
             </div>
         </div>
         <!-- 门店位置 End -->
@@ -105,27 +103,28 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-md-offset-3 store-tab">
-                <ul class="nav nav-pills nav-justified">
-                    <li role="presentation" class=""><a href="#">北京体育大学</a></li>
-                    <li role="presentation" class=""><a href="#">朝阳大悦城</a></li>
-                    <li role="presentation" class=""><a href="#">人民大学</a></li>
-                    <li role="presentation" class=""><a href="#">人民大学</a></li>
+
+                <ul class="nav nav-pills nav-justified" id="store-tab-pc">
+                    <li role="presentation" class="active"><a href="#">北京体育大学</a><span></span></li>
+                    <li role="presentation" class=""><a href="#">朝阳大悦城</a><span></span></li>
+                    <li role="presentation" class=""><a href="#">人民大学</a><span></span></li>
+                    <li role="presentation" class=""><a href="#">人民大学</a><span></span></li>
                 </ul>
             </div>
         </div>
-
+        <br/>
         <div class="row">
             <div class="col-xs-12 col-md-12 store-show-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
                             <div class="store-show-title">
                                 <h3>北京体育大学店</h3>
                                 <p>Beijing Sport University</p>
                             </div>
 
-                            <div class="store-show-table">
-                                <table>
+                            <div class="store-show-table table-responsive">
+                                <table class="table">
                                     <thead>
                                     <tr>
                                         <th>周一</th>
@@ -215,52 +214,54 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row">
-                        <div class="col-xs-12 col-md-10 col-md-offset-1">
-                            <p>北京体育大学店，位于海淀区中关村北大街体育大学西南门（训练环境优雅，设施非常完善），海淀区最专业的散打泰拳馆，训练馆维语地上一层，附近绿树成荫，空气质量、空气流通非常好。训练馆馆总面积800平米，免费淋浴、免费停车一应俱全。沙袋、擂台、脚靶、手靶、护具全部为：世界顶级格斗顶级Twins品牌，开设的专业课程有自由搏击，散打，泰拳，拳击，女子防身术，体能训练，私教VIP等。本俱乐部以专业的训练场地，科学的训练方法和丰富的训练经验赢得了广大学员的认可。</p>
-
-                            <div class="row">
-                                <div class="col-xs-4 col-md-4">
-                                    <a href="#" class="thumbnail">
-                                        <img src="/images/course.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-xs-8 col-md-8">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-md-6">
-                                            <a href="#" class="thumbnail">
-                                                <img src="/images/course.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-xs-6 col-md-6">
-                                            <a href="#" class="thumbnail">
-                                                <img src="/images/course.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-xs-6 col-md-6">
-                                            <a href="#" class="thumbnail">
-                                                <img src="/images/course.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-xs-6 col-md-6">
-                                            <a href="#" class="thumbnail">
-                                                <img src="/images/course.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
 
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 about-store-location-text">
+                <p>北京体育大学店，位于海淀区中关村北大街体育大学西南门（训练环境优雅，设施非常完善），海淀区最专业的散打泰拳馆，训练馆维语地上一层，附近绿树成荫，空气质量、空气流通非常好。训练馆馆总面积800平米，免费淋浴、免费停车一应俱全。沙袋、擂台、脚靶、手靶、护具全部为：世界顶级格斗顶级Twins品牌，开设的专业课程有自由搏击，散打，泰拳，拳击，女子防身术，体能训练，私教VIP等。本俱乐部以专业的训练场地，科学的训练方法和丰富的训练经验赢得了广大学员的认可。</p>
+
+                <div class="row about-store-location-image">
+
+                    <table>
+                        <tr>
+                            <td rowspan="2" class="first" style="background-image:url('/images/course.png');">
+
+                            </td>
+                            <td>
+                                <a href="#" class="thumbnail">
+                                    <img src="/images/course.png" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="thumbnail">
+                                    <img src="/images/course.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#" class="thumbnail">
+                                    <img src="/images/course.png" alt="">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" class="thumbnail">
+                                    <img src="/images/course.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
     <!--  -->
 
     <footer>
@@ -322,6 +323,43 @@
 
 </div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5xNnwfOghGsvP3nSYjj7M21Nl9Gic31v"></script>
+<!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+
+<script type="text/javascript">
+    // 百度地图API功能
+    map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(116.395539,40.002566), 12);
+    var data_info = [
+        [116.322143,40.026522,"北京体育大学<br />地址：体院西路甲2号<br />电话：010-62987571"],
+        [116.470603,39.896909,"朝阳大悦城<br />地址：朝阳区百环家园4号楼B1楼(近朝阳图书馆、百环家园、双井桥、劲松桥) <br />电话：010-62987571 "],
+        [116.321007,39.979369,"人民大学<br />地址：体院西路甲2号<br />电话：010-62987571"]
+    ];
+    var opts = {
+        width : 250,     // 信息窗口宽度
+        height: 80,     // 信息窗口高度
+        // title : "信息窗口" , // 信息窗口标题
+        enableMessage:true // 设置允许信息窗发送短息
+    };
+    for(var i=0;i<data_info.length;i++){
+        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+        var content = data_info[i][2];
+        map.addOverlay(marker);               // 将标注添加到地图中
+        addClickHandler(content,marker);
+    }
+    function addClickHandler(content,marker){
+        marker.addEventListener("click",function(e){
+            openInfo(content,e)}
+        );
+    }
+    function openInfo(content,e){
+        var p = e.target;
+        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    }
+</script>
+
+    </body>
 </html>

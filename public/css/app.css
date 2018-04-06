@@ -8419,6 +8419,11 @@ a:hover {
   border: none;
 }
 
+.button-bg-gradient {
+  background-image: linear-gradient(-148deg, #4425ff 0%, #ff1616 100%);
+  border: none;
+}
+
 .label-radius {
   border-radius: 1rem;
 }
@@ -8796,9 +8801,209 @@ footer .footer-bottom p a {
   background-size: cover;
 }
 
+/* 关于我们页面 */
+
+.about .about-banner {
+  background: url("/images/about-banner.png") no-repeat center center;
+  background-size: cover;
+}
+
+.about .about-banner-text {
+  height: 30rem;
+  background: url("/images/slogin.png") no-repeat center center;
+  background-size: 23%;
+}
+
+.about .about-banner-form {
+  margin-top: 5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 0;
+  opacity: 0.9;
+}
+
+.about .about-banner-form .panel-heading {
+  background: none;
+  font-size: 1.6rem;
+  text-align: center;
+  -o-border-image: linear-gradient(to right, #ff1616, #4425ff) 30 30;
+     border-image: -webkit-gradient(linear, left top, right top, from(#ff1616), to(#4425ff)) 30 30;
+     border-image: linear-gradient(to right, #ff1616, #4425ff) 30 30;
+}
+
+.about .about-banner-form .panel-heading span {
+  margin-left: 1.1rem;
+  position: relative;
+  top: -0.3rem;
+}
+
+.about .about-banner-form .panel-heading img {
+  height: 1.8rem;
+}
+
+.about .about-banner-form form {
+  padding: 0 2rem;
+}
+
+.about .about-banner-form form button {
+  color: #FFF;
+}
+
+.about .about-map {
+  height: 40rem;
+}
+
+.about .about-text .panel {
+  border: none;
+}
+
+.about .store-tab .nav-justified li,
+.about .store-tab .nav-tabs.nav-justified li {
+  float: left;
+}
+
+.about .store-tab .nav a {
+  color: #555;
+}
+
+.about .store-tab .nav li.active a {
+  background-color: transparent;
+  border-bottom: 2px solid #ff1616;
+  -o-border-image: linear-gradient(to right, #ff1616, #4425ff) 30 30;
+     border-image: -webkit-gradient(linear, left top, right top, from(#ff1616), to(#4425ff)) 30 30;
+     border-image: linear-gradient(to right, #ff1616, #4425ff) 30 30;
+}
+
+.about .store-show-bg {
+  background: url("/images/about.png") no-repeat left top;
+  color: #FFF;
+}
+
+.about .store-show-bg .store-show-title {
+  color: #FFF;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about .store-show-bg .store-show-table {
+  margin-bottom: 4rem;
+}
+
+.about .store-show-bg .store-show-table table {
+  width: 100%;
+}
+
+.about .store-show-bg .store-show-table table th {
+  background-color: #eee;
+  text-align: center;
+}
+
+.about .store-show-bg .store-show-table table td {
+  background-color: #ccc;
+}
+
+.about .store-show-bg .store-show-table table td,
+.about .store-show-bg .store-show-table table th {
+  color: #111111;
+  border: 1px solid #FFF;
+  opacity: 0.8;
+}
+
+.about .about-store-location-text {
+  margin-top: 5rem;
+}
+
+.about .about-store-location-image {
+  margin-top: 5rem;
+}
+
+.about .about-store-location-image table {
+  width: 100%;
+}
+
+.about .about-store-location-image table td {
+  width: 33.3%;
+  border: 5px solid #FFF;
+}
+
+.about .about-store-location-image table td.first {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.about .about-store-location-image .thumbnail {
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+
+.about .about-store-location-image .thumbnail img {
+  width: 100%;
+  height: 8rem;
+  display: block;
+}
+
 /* 适应PC */
 
 @media (min-width: 992px) {
+  .about .about-map {
+    height: 50rem;
+  }
+
+  .about .store-tab {
+    margin-top: 5rem;
+  }
+
+  .about .store-tab .nav-justified li,
+  .about .store-tab .nav-tabs.nav-justified li {
+    float: none;
+  }
+
+  .about .store-tab .nav {
+    border-top: 2px solid #d8d8d8;
+  }
+
+  .about .store-tab .nav a {
+    color: #555555;
+  }
+
+  .about .store-tab .nav a:hover {
+    background: none;
+    border-bottom: none;
+  }
+
+  .about .store-tab .nav li {
+    position: relative;
+  }
+
+  .about .store-tab .nav li span {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 38px;
+    top: -40px;
+    left: 50%;
+    margin-left: -15px;
+    background: url("/images/loation.png") no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .about .store-tab .nav li.active a {
+    background-color: transparent;
+  }
+
+  .about .store-tab .nav li.active a:hover {
+    color: #555555;
+  }
+
+  .about .store-tab .nav li.active span {
+    background-image: url("/images/loation.png");
+  }
+
+  .about .about-store-location-image .thumbnail img {
+    height: 18rem;
+  }
+
   .course .course-content {
     min-height: 60rem;
   }
