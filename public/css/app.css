@@ -8990,10 +8990,12 @@ footer .footer-bottom p a {
 
   .about .store-tab .nav li.active a {
     background-color: transparent;
+    border-bottom: none;
   }
 
   .about .store-tab .nav li.active a:hover {
     color: #555555;
+    background: none;
   }
 
   .about .store-tab .nav li.active span {

@@ -649,10 +649,12 @@ footer{
         li.active{
           a{
             background-color: transparent;
+            border-bottom:none;
           }
 
           a:hover{
             color:#555555;
+            background: none;
           }
 
           span{
